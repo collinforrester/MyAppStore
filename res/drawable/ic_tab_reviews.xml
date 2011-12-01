@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- when selected, use grey -->
+    <item android:drawable="@drawable/star_selected"
+        android:state_selected="true"
+        android:state_pressed="false"></item>
+    
+        <!-- when not selected, use white (default) -->
+        <item android:drawable="@drawable/star_not_selected"
+            ></item>
+
+</selector>

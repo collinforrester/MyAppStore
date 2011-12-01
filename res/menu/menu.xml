@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:visible="true" 
+android:enabled="true" 
+android:title="Options" 
+android:id="@+id/options"
+android:icon="@android:drawable/ic_menu_preferences"></item>
+<item android:id="@+id/refresh" android:title="Refresh"></item><item android:title="Manage Updater Service" android:visible="false">
+	<menu>
+		<group android:checkableBehavior="none" android:visible="true">
+			<item android:visible="true" 
+			android:id="@+id/enableService"
+			android:enabled="true" 
+			android:title="Enable Updater Service">
+			</item>
+			<item android:visible="true" 
+			android:id="@+id/disableService"
+			android:enabled="true" 
+			android:title="Disable Updater Service">
+			</item>
+		</group>
+	</menu>
+</item>
+
+
+
+</menu>

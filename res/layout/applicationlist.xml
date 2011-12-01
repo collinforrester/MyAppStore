@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_below="@+id/btnClear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@+id/tvStoreCode" android:layout_alignRight="@+id/tvStoreCode" android:id="@+id/scrollViewAppList">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="match_parent" android:id="@+id/appListLinLayout" android:orientation="vertical">
+    </LinearLayout>
+</ScrollView>

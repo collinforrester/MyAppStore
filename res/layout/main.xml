@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:id="@+id/linLayout">
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/storeCode"
+    android:id="@+id/tvStoreCode" android:textSize="18dip"/>
+	<RelativeLayout android:layout_width="match_parent" 
+	android:id="@+id/relativeLayout1" 
+	android:layout_height="wrap_content">
+		<EditText android:text="" android:hint="@string/txtSearchHint" android:layout_height="wrap_content" android:id="@+id/txtSearch" android:layout_width="match_parent"></EditText>
+		<Button android:text="Clear" android:id="@+id/btnClear" android:layout_below="@+id/txtSearch" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+		<Button android:text="Search" android:layout_toRightOf="@+id/btnClear" android:layout_below="@+id/txtSearch" android:id="@+id/btnSearch" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		
+	</RelativeLayout>
+	<include layout="@layout/applicationlist"/>
+</LinearLayout>

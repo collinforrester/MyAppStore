@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/scrollViewInfoParent">
+    <RelativeLayout android:layout_width="fill_parent" 
+        android:layout_height="match_parent" 
+        android:id="@+id/linLayoutInfoParent" 
+        android:orientation="vertical">
+        <TextView
+	    	android:id="@+id/txtInfoScreenTitle"
+        	android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtInfoScreenVersion"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_toRightOf="@+id/txtInfoScreenTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtInfoScreenTitle" />
+        <TextView
+            android:id="@+id/txtInfoScreenAuthor"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/txtInfoScreenTitle"
+            android:layout_height="wrap_content" />
+        <TextView 
+            android:id="@+id/txtInfoScreenDescription"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/txtInfoScreenAuthor"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</ScrollView>

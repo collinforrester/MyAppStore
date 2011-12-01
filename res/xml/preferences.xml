@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<EditTextPreference android:summary="Enter the code of the app store you wish to connect to" 
+android:title="Store Code" android:key="storeCode" android:enabled="true" 
+android:selectable="true"></EditTextPreference>
+<CheckBoxPreference android:summaryOn="Updater Service is running" android:summaryOff="Updater Service is stopped" android:key="chkRunUpdater" android:summary="Enables/Disables the updater service" android:title="Updater Service"></CheckBoxPreference>
+<EditTextPreference android:title="Username" android:key="username" android:summary="Enter your username (optional)"></EditTextPreference>
+<EditTextPreference android:title="Password" android:key="password" android:shouldDisableView="true" android:summary="Enter your password (only required if the store isn't public)"></EditTextPreference>
+
+</PreferenceScreen>

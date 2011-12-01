@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="storeCode">No Store Code</string>
+    <string name="app_name">App Store Client</string>
+    <string name="txtSearchHint">Enter your search term here</string>
+    <string name="defaultMessage">Welcome!  You\'re currently not connected to an app store.  Please tap your screen to begin or enter your information in application options.</string>
+</resources>

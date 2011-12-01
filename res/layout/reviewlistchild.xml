@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtSummary"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/txtSummary"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+        <RatingBar
+	        android:id="@+id/ratingBar"
+    		style="?android:attr/ratingBarStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@+id/txtSummary"
+	        android:numStars="10"
+	        android:stepSize="0.1"
+			android:isIndicator="true"
+			android:layout_alignLeft="@+id/relativeContainer"/>
+        <TextView 
+            android:id="@+id/txtDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_below="@+id/ratingBar"
+			android:layout_alignLeft="@+id/relativeContainer"/>
+
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

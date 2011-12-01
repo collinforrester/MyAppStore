@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/scrollViewSummaryParent">
+    <RelativeLayout android:layout_width="fill_parent" 
+        android:layout_height="match_parent" 
+        android:id="@+id/linLayoutSummaryParent" 
+        android:orientation="vertical">
+        <TextView
+	    	android:id="@+id/txtSummaryScreenTitle"
+        	android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtSummaryScreenVersion"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_toRightOf="@+id/txtSummaryScreenTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtSummaryScreenTitle" />
+        <RatingBar
+	        android:id="@+id/summaryRatingBar"
+   			style="?android:attr/ratingBarStyleIndicator"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@+id/txtSummaryScreenTitle"
+	        android:numStars="5"
+	        android:stepSize="0.1"
+			android:isIndicator="true"
+			android:layout_alignLeft="@+id/relativeContainer"/>
+        <TextView
+            android:id="@+id/txtSummaryNumberOfRatings"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/summaryRatingBar"
+	        android:layout_toRightOf="@+id/summaryRatingBar" />
+	    
+        <TextView
+            android:id="@+id/txtSummaryScreenAuthor"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/summaryRatingBar"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtSummaryTags"
+            android:layout_below="@+id/txtSummaryScreenAuthor"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button 
+            android:id="@+id/btnInstall"
+            android:text="Install"
+            android:layout_below="@+id/txtSummaryTags"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView 
+            android:id="@+id/txtSummaryScreenDescription"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/btnInstall"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</ScrollView>
